@@ -1,0 +1,36 @@
+
+
+:root{
+    --color-principal: #08001d;
+    --color-primer-complementario: #F2AA1F;
+    --color-segundo-complementario: #F1ECE7; 
+    --color-ocuro: #090909;
+    --color-claro: #FFFFFF;
+
+    --padding-normalizado: 5rem;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-principal);
+}
+
+
+
+/* CONTENIDO COMPLETO *************************************************************************/
+
+
+@media screen and (max-width: 1550px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 340px) {
+   
+
+}
