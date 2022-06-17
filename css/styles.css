@@ -1,21 +1,141 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --color-principal: #08001d;
+    --color-principal: #2B418B;
     --color-primer-complementario: #F2AA1F;
     --color-segundo-complementario: #F1ECE7; 
     --color-ocuro: #090909;
-    --color-claro: #FFFFFF;
+    --color-claro: #639ECA;
 
     --padding-normalizado: 5rem;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, ul, li{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 700;
+    /* color | offset-x | offset-y | blur-radius */
+    text-shadow: #CCC 1px 0 10px;
+}
+
+.offcanvas-body{
+    scroll-behavior: smooth;
+}
 
 body{
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-principal);
+    /*background-color: var(--color-principal);*/
+    background: url('../imgs/logotipo-black.jpg') no-repeat center;
+    background-size: auto;
 }
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(100, 100, 100);
+}
+
+li{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#offcanvas-contenido{
+    width: 50vw;
+}
+
+#offcanvas-contenido h1,
+#offcanvas-contenido h2,
+#offcanvas-contenido h3,
+#offcanvas-contenido h4,
+#offcanvas-contenido h5,
+#offcanvas-contenido h6, 
+#offcanvas-contenido p, 
+#offcanvas-contenido a, 
+#offcanvas-contenido ul, 
+#offcanvas-contenido li{
+    color: black;
+}
+
+#offcanvas-contenido h2{
+    font-weight: 300;
+    color: var(--color-principal);
+}
+
+#offcanvas-contenido h4{
+    color: var(--color-claro);
+}
+
+#offcanvas-contenido p{
+    font-weight: 200;
+}
+
+#offcanvas-contenido a{
+    font-size: 1rem;
+}
+
+.opcion-menu:hover{
+    color: var(--color-primer-complementario);
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    
+}
+
+#call-to-action .btn{
+    box-shadow:  #CCC 1px 0 5px;
+}
+
+#call-to-action .btn-light:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.form-control{
+    border: 0;
+    border-bottom: 1px solid var(--color-principal);
+    border-radius: 0;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent;
+    border-bottom: 1px solid var(--color-claro);
+}
+
+#enviar{
+    background-color: var(--color-claro);
+    color: white;
+}
+
+.item-media img{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
 
 
 
@@ -26,8 +146,25 @@ body{
     
 }
 
+@media screen and (max-width: 820px) {
+
+    #offcanvas-contenido{
+        width: 100vw;
+    }
+
+
+}
+
 @media screen and (max-width: 768px) {
 
+    body{
+        background: url('../imgs/logotipo-black.jpg') no-repeat center;
+        background-size: 170vh;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
 }
 
 @media screen and (max-width: 340px) {
